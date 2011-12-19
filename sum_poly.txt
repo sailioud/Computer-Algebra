@@ -2,11 +2,7 @@ summation():={output("Doste ena polyonymo se morfi a*x^(k-1)+b*x^(k-2)+...+k \n 
 lis(poly);
 
 //ta stoixeia tis LIST exoyn antistrofi seira apo ayti poy ta edose o xristis giauto kanoume revlist
-//LIST[0] o syntelestis toy x^0, LIST[1] o syntelestis tou x...
-//LIST := convert(poly,base,10);
 LIST :=revlist(symb2poly(poly));
-
-//LIST :=symb2poly(poly);
 
 suma :=0; 
  
@@ -19,7 +15,7 @@ for(n:=0;n<length(LIST);n++){
       suma := suma + a;
       //output(suma);
       suma := developper(suma);
-      //output(suma);
+      output(suma);
     }:;
 
   }
