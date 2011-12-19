@@ -4,9 +4,9 @@ lis(poly);
 //LIST[0] o syntelestis toy x^0, LIST[1] o syntelestis tou x...
 LIST := convert(poly,base,10);
 sum :=0; 
-for(i:=0;i<length(LIST);i++){
-  if(LIST[i]>0){
-    //vriskoyme arithmoys stirling opoy k=i
+for(n:=0;n<length(LIST);n++){
+  if(LIST[n]>0){
+    //vriskoyme arithmoys stirling opoy k=n
     //kai n apo 1 eos k+1
     //toys epistrefoyme se lista
     for()
