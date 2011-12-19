@@ -1,11 +1,15 @@
 output("Doste ena polyonymo se morfi abc...k \n opoy a*x^(k-1)+b*x^(k-2)+...+k \n\n px: 1100 gia x^3+x^2");
 lis(poly);
+
 //ta stoixeia tis LIST exoyn antistrofi seira apo ayti poy ta edose o xristis
 //LIST[0] o syntelestis toy x^0, LIST[1] o syntelestis tou x...
 LIST := convert(poly,base,10);
 suma :=0; 
+
+//gia kathe stoixeio toy polyonymou
 for(n:=0;n<length(LIST);n++){
 
+//an o syntelestis einai megalyteros tou 0
   if(LIST[n]>0){
     for(k:=0;k<=n;k++){
       //me toys arithmous stirling vgazoyme to athroisma
