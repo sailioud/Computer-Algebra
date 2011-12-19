@@ -1,18 +1,21 @@
 summation():={output("Doste ena polyonymo se morfi abc...k \n opoy a*x^(k-1)+b*x^(k-2)+...+k \n\n px: 1100 gia x^3+x^2");
 lis(poly);
+
 //ta stoixeia tis LIST exoyn antistrofi seira apo ayti poy ta edose o xristis
 //LIST[0] o syntelestis toy x^0, LIST[1] o syntelestis tou x...
 LIST := convert(poly,base,10);
-sum :=0; 
+suma :=0; 
+
+//gia kathe stoixeio toy polyonymou
 for(n:=0;n<length(LIST);n++){
+
+//an o syntelestis einai megalyteros tou 0
   if(LIST[n]>0){
-    //vriskoyme arithmoys stirling opoy k=n
-    //kai n apo 1 eos k+1
-    //toys epistrefoyme se lista
-    for()
+    for(k:=0;k<=n;k++){
       //me toys arithmous stirling vgazoyme to athroisma
   }
 }
+<<<<<<< HEAD
 }:;
 
 stirling(n,k):={
@@ -25,3 +28,6 @@ if (n>0) then
   end if;
 end if;
 }:;
+=======
+output(suma);
+>>>>>>> d332b8ccc11d343c21faffa93fcae0be05e66dd2
