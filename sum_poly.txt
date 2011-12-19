@@ -13,8 +13,15 @@ suma :=0;
 for(n:=0;n<length(LIST);n++){
   if(LIST[n]>0){
     //gia kathe mononymo kaloyme tin stirling(n,k) me n ton vathmo toy kai k apo 1->n
-    for()
-      //me toys arithmous stirling vgazoyme to athroisma
+    for(k:=0;k<=n;k++){
+      a:=stirling(n,k) * mul(x-s,s,0,k) /(k+1);
+      //output(a);
+      suma := suma + a;
+      //output(suma);
+      suma := developper(suma);
+      //output(suma);
+    }:;
+
   }
 }
 }:;
